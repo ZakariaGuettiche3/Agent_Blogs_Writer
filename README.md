@@ -78,9 +78,3 @@ output/
 | Text (routing, planning, writing, editing) | `gemini-3.5-flash`       |
 | Image generation                           | `gemini-2.5-flash-image` |
 
-## Known Issues
-
-- `image_founder` returns the key `image_plan`, but the state and `generate_and_place_images` expect `image_specs`. Rename the returned key.
-- In `researcher`, the `if not all_results: return ...` check is indented inside the `for` loop. Move it out of the loop.
-- `evidence` from the researcher is not yet passed to the section workers.
-- `ImageSpec.size` and `quality` are defined but not used when generating images.
